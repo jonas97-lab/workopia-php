@@ -1,6 +1,6 @@
 <?php
 require '../helpers.php';
 
-require basePath('views/home.view.php');
+$uri = $_SERVER['REQUEST_URI'];
 
-echo 'Hello world';
+require basePath('router.php');
